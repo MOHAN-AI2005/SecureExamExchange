@@ -153,10 +153,7 @@ Detailed results are available in `tests/test_results.txt`.
 
 The sequence diagram illustrates the trusted public-key exchange, sender-side encryption and signing, transmission through an untrusted channel, recipient-side signature verification, session-key recovery, authenticated decryption, and rejection paths.
 
-
-```markdown
 ![Secure Examination-Paper Exchange Sequence Diagram](screenshots/sequence_diagram.jpeg)
-```
 
 ## Security Notes
 
