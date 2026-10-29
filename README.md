@@ -66,30 +66,22 @@ Successful verification demonstrates that the package was signed using the priva
 
 ## Project Structure
 
-```text
 SecureExamExchange/
-â”œâ”€â”€ secure_exchange.py
-â”œâ”€â”€ sender/
-â”‚   â”œâ”€â”€ input/
-â”‚   â”‚   â””â”€â”€ examination.txt
-â”‚   â”œâ”€â”€ outgoing/
-â”‚   â”‚   â””â”€â”€ examination_paper.secure.json
-â”‚   â”œâ”€â”€ private/
-â”‚   â””â”€â”€ trusted_public/
-â”œâ”€â”€ recipient/
-â”‚   â”œâ”€â”€ incoming/
-â”‚   â”‚   â””â”€â”€ examination_paper.secure.json
-â”‚   â”œâ”€â”€ recovered/
-â”‚   â”‚   â””â”€â”€ examination.txt
-â”‚   â”œâ”€â”€ private/
-â”‚   â””â”€â”€ trusted_public/
-â”œâ”€â”€ tests/
-â”‚   â””â”€â”€ test_results.txt
-â”œâ”€â”€ screenshots/
-â””â”€â”€ README.md
-```
+|-- secure_exchange.py
+|-- sender/
+|   |-- input/
+|   |-- outgoing/
+|   `-- trusted_public/
+|-- recipient/
+|   |-- incoming/
+|   |-- recovered/
+|   `-- trusted_public/
+|-- tests/
+|-- screenshots/
+|-- .gitignore
+`-- README.md
 
-Private-key files and other sensitive credentials must not be committed to GitHub.
+Private keys are generated locally and excluded from version control.
 
 ## Requirements
 
@@ -157,7 +149,6 @@ Detailed results are available in `tests/test_results.txt`.
 
 The sequence diagram illustrates the trusted public-key exchange, sender-side encryption and signing, transmission through an untrusted channel, recipient-side signature verification, session-key recovery, authenticated decryption, and rejection paths.
 
-Add the diagram image to the `screenshots/` directory and display it here:
 
 ```markdown
 ![Secure Examination-Paper Exchange Sequence Diagram](screenshots/sequence_diagram.jpeg)
