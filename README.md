@@ -64,6 +64,7 @@ Successful verification demonstrates that the package was signed using the priva
 11. Decrypt and authenticate the file using AES-GCM.
 12. Release the recovered file only after successful authentication.
 
+
 ## Project Structure
 
 ```text
@@ -71,27 +72,20 @@ SecureExamExchange/
 |-- secure_exchange.py
 |-- sender/
 |   |-- input/
-|   |   `-- examination.txt
 |   |-- outgoing/
-|   |   `-- examination_paper.secure.json
 |   `-- trusted_public/
 |-- recipient/
 |   |-- incoming/
-|   |   `-- examination_paper.secure.json
 |   |-- recovered/
-|   |   `-- examination.txt
 |   `-- trusted_public/
 |-- tests/
-|   `-- test_results.txt
 |-- screenshots/
-|   |-- encryption_success.png
-|   |-- recipient_recovery.png
-|   |-- security_tests.png
-|   |-- sequence_diagram.jpeg
-|   |-- sha256_integrity.png
-|   `-- signed_package.png
 |-- .gitignore
 `-- README.md
+```
+
+Private keys are generated locally and excluded from version control.
+
 ## Requirements
 
 - Python 3.13 or a compatible Python version
@@ -102,6 +96,7 @@ Install the dependency:
 ```powershell
 python -m pip install cryptography
 ```
+
 
 ## Running the Application
 
