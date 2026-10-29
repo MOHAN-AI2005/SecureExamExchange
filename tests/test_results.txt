@@ -1,0 +1,18 @@
+SECURE EXAMINATION-PAPER EXCHANGE
+Test Results
+Date: 2026-10-29
+
+1. Authorized recipient recovery: PASS
+2. Modified ciphertext: REJECTED
+3. Modified metadata: REJECTED
+4. Modified digital signature: REJECTED
+5. Incorrect recipient private key: REJECTED
+6. Incorrect sender public key: REJECTED
+7. Repeated encryption produces different packages: PASS
+8. AES-GCM rejects corrupted ciphertext after valid signature verification: PASS
+
+File integrity verification:
+SHA-256 hash of original and recovered files matched.
+
+Final result:
+All eight automated self-tests passed.

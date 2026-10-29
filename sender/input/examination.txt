@@ -1,0 +1,22 @@
+CONFIDENTIAL EXAMINATION PAPER
+
+Course: Cryptography and Information Security
+
+Examination: Workshop Practical
+
+Question 1:
+Explain RSA public-key cryptography and describe the roles of public and private keys.
+
+Question 2:
+Explain AES-256-GCM and discuss how it provides confidentiality and authentication.
+
+Question 3:
+Describe RSA-OAEP and explain how it protects an AES session key.
+
+Question 4:
+Explain digital signatures using RSA-PSS and SHA-256.
+
+Question 5:
+Describe how digital signatures and authenticated encryption detect unauthorised modifications.
+
+END OF EXAMINATION PAPER

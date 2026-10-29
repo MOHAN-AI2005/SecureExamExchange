@@ -1,0 +1,23 @@
+﻿# Private cryptographic keys
+**/private/
+**/*_private.pem
+**/*_private.key
+
+# Passwords and secrets
+.env
+.env.*
+!.env.example
+secrets.json
+*.password
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
