@@ -67,19 +67,30 @@ Successful verification demonstrates that the package was signed using the priva
 ## Project Structure
 
 SecureExamExchange/
-|-- secure_exchange.py
-|-- sender/
-|   |-- input/
-|   |-- outgoing/
-|   `-- trusted_public/
-|-- recipient/
-|   |-- incoming/
-|   |-- recovered/
-|   `-- trusted_public/
-|-- tests/
-|-- screenshots/
-|-- .gitignore
-`-- README.md
+├── secure_exchange.py
+├── sender/
+│   ├── input/
+│   │   └── examination.txt
+│   ├── outgoing/
+│   │   └── examination_paper.secure.json
+│   └── trusted_public/
+├── recipient/
+│   ├── incoming/
+│   │   └── examination_paper.secure.json
+│   ├── recovered/
+│   │   └── examination.txt
+│   └── trusted_public/
+├── tests/
+│   └── test_results.txt
+├── screenshots/
+│   ├── encryption_success.png
+│   ├── recipient_recovery.png
+│   ├── security_tests.png
+│   ├── sequence_diagram.jpeg
+│   ├── sha256_integrity.png
+│   └── signed_package.png
+├── .gitignore
+└── README.md
 
 Private keys are generated locally and excluded from version control.
 
